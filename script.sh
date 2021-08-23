@@ -16,7 +16,7 @@ done
 hash=$(openssl passwd $user_password)
 #Add user
 sudo useradd -g "$groups" --home-dir "/home/$home_directory" --password "$hash" $user_name
-#Check for adding a any users
+#Check for adding a any users 
 echo "Do you want add any users?(Y for continue, any symbol for exit)"
 read answer
 if [ "$answer" == "Y" ]
